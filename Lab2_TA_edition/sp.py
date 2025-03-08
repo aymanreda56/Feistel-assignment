@@ -61,7 +61,7 @@ def sp_network_one_block(block, rounds=4):
 
 
 def truncated_xor (bin_msg, key):
-    bin_key = bin(key)
+    bin_key = bin(key)[2:]
     if(len(bin_key) > len(bin_msg)):
         new_key = bin_key[len(bin_key) - len(bin_msg):]
     elif(len(bin_key) < len(bin_msg)):

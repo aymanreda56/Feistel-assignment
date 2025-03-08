@@ -117,12 +117,8 @@ def Grade():
     
     testKeyScheduler()
     testRound()
+    testFeistel()
     
-    try:
-        testFeistel()
-    except:
-        print(f"AUTOGRADER: Error in testFeistel function")
-        OverallGrade -= 2.0
     print(f"\n\n######################################\n#  AUTOGRADER: Final grade: {OverallGrade}/5.0  #\n######################################\n")
 
 
