@@ -19,6 +19,7 @@ class feistel:
         
         hint1: bin(3) returns "0b00000000000000000000000000000011" as a string, you should remove the "0b" at the beginning
         hint2: int("011", 2) returns 3 as an integer 
+        hint3: string.zfill(overall_length) fills the string with preceding zeros till it reaches the overall_length
         
         returns a list of those subkeys
         """
@@ -47,19 +48,19 @@ class feistel:
         
         returns [L_next , R_next] which is a list consisting of 2 bit-blocks
         """
-        #TODO 1: apply the F_function, use the F_function passed to the class during initialization, F_function takes an integer not a string and the subkey
+        #TODO: apply the F_function, use the F_function passed to the class during initialization, F_function takes an integer not a string and the subkey
         # outputting intermediate result h
         
         
         
-        #TODO 2: Xor h with L to be out R_next
+        #TODO: Xor h with L to be out R_next
         # you should convert R_next to a binary string of the same length as previous L and R blocks,
         # Xoring can truncate binary strings if there are zeros in the MSBs
         # Hint: use string.zfill(overall_length) to fill with MSB zeros till we reach overall_length
         
        
        
-        #TODO 3: return the new [L_next, R_next], think of what L_next and R_next should be in a feistel network, make sure to return them in a list
+        #TODO: return the new [L_next, R_next], think of what L_next and R_next should be in a feistel network, make sure to return them in a list
         pass
         
         
